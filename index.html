@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Truck Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .truck {
+      transition: transform 0.5s ease-in-out;
+    }
+    .truck.clicked {
+      transform: translateX(-100%);
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div>
+        <img src="./images/lightblue.png" alt="Truck 1" class="truck">
+        <div class="truck-label">Light Blue Metallic and Blue</div>
+      </div>
+      <div>
+        <img src="./images/doeskin.png" alt="Truck 2" class="truck">
+        <div class="truck-label">Doeskin Tan and Black</div>
+      </div>
+      <div>
+        <img src="./images/Frostwhite.png" alt="Truck 3" class="truck">
+        <div class="truck-label">Frost White and Red</div>
+      </div>
+      <div>
+        <img src="./images/Midnight.png" alt="Truck 4" class="truck">
+        <div class="truck-label">Midnight Blue and White</div>
+      </div>
+      </div>
+      <div class="right-column">
+        <div class="header">
+          <h2>SAVE MORE THAN $255.00<span style="font-size: x-small;">†</span> ON 1985<br>WRANGLER PACKAGE "A"</h2>
+        </div>
+      <div class="bullet-points">
+        <ul>
+          <li>Rally wheels (C/K 1500 Series)*</li>
+          <li>PA Wheel covers (C/K 2500 Series)</li>
+          <li>Point 3</li>
+          <li>Wheel opening mouldings</li>
+          <li>Headliner</li>
+          <li>Cloth bench seat<br>(Vinyl may be substituded at <br>no extra cost)</li>
+          <li>The following High Sierra<br>equipment:</li>
+          <li>Bright appearance items (except<br>nameplates)</li>
+        </ul>
+        <ul>
+          <li>Colourkeyed rubber floor mat<br>Stylish door trim panels<br>
+            Convenient dome light<br>Brushed aluminum instrument<br>
+            cluster bezel<br>Noise-reducing cab back<br>insulator</li>
+          <li>Single colour body paint with<br>contemporary strobe style<br>striping design and integral<br>
+          Wrangler lettering on<br> rear quarter and tailgate<br>
+          <span style="font-size: small;">*May be upgraded.</span><br><span style="font-size: x-small;">†</span><span style="font-size: small;">Based on suggested retail prices.</span></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="title-box">
+          STRIPING COMPATIBILITY CHART<br>
+          EXTERIOR BODY COLOUR STRIPE COLOUR
+        </div>
+        <div class="box-row">
+          <div class="truck-color">EXTERIOR BODY</div>
+          <div class="truck-alt-color">STRIPE COLOUR</div>
+        </div>
+        <div class="box-row">
+          <div class="truck-color">Truck Color 2</div>
+          <div class="truck-alt-color">Truck Alt Color 2</div>
+        </div>
+        <!-- Add more rows as needed -->
+      </div>
+    </div>
+  </div>
+  <script>
+    const trucks = document.querySelectorAll('.truck');
+  
+    trucks.forEach((truck) => {
+      truck.addEventListener('click', () => {
+        if (truck.classList.contains('clicked')) {
+          truck.style.transform = 'translateX(0)';
+          truck.classList.remove('clicked');
+        } else {
+          truck.style.transform = 'translateX(-100%)';
+          truck.classList.add('clicked');
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

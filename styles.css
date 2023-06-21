@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Fragment Core';
+    src: url('./Fragmentcore.otf') format('opentype');
+  }
+  
+  html {
+    background-color: #eeda81;
+  }
+  
+  body {
+    background: linear-gradient(to right, #eeda81 -1%, #e8e6da -2%, #e8e6da -90%, #eeda81 -10%) no-repeat;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Add meta viewport tag for responsiveness */
+  meta {
+    name: viewport;
+    content: width=device-width, initial-scale=1.0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .truck-label{
+    text-align: center;
+    font-family: 'Fragment Core', sans-serif;
+    font-size: 20px;
+  }
+  
+  .right-column {
+    width: 40%;
+    padding-right: 20vw;
+    padding-left: 40px;
+  }
+  
+  .header {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-family: 'Fragment Core', sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .bullet-points {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .bullet-points ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Fragment Core', sans-serif;
+    padding-bottom: 20px;
+  }
+  
+  img {
+    width: 500px;
+  }
+  
+  .box {
+    border: 2px solid black;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title-box {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Fragment Core', sans-serif;
+    width: 100%;
+  }
+  
+  .box-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Mobile-friendly styles */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .right-column {
+      width: 100%;
+      padding: 0;
+    }
+    .left-column{
+        text-align: center;
+    }
+    
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+    
+    .bullet-points {
+      padding: 0;
+      font-size: 16px;
+    }
+    
+    .box {
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    .title-box {
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  }
+  
